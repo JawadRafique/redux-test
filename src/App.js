@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import { Task } from "./components/Task";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Redirect,
 } from "react-router-dom";
+import { TaskGrid } from "./components/TaskGrid";
 
 function App() {
     return (
@@ -24,10 +24,6 @@ function App() {
 }
 
 function Programs() {
-    return (
-        <section className="main">
-            <Task />
-        </section>
-    );
+    return <TaskGrid />;
 }
 export default App;
